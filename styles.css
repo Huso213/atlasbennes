@@ -7,7 +7,7 @@ body {
 
 
 .navbar{
-    border: solid 1px red;
+    border: solid 1px blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
