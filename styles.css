@@ -93,3 +93,75 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Styles de base pour les écrans de téléphone */
+@media all and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Taille de police de base pour une meilleure lisibilité */
+    }
+
+    .navbar {
+        flex-direction: row; /* Aligner les éléments de la navbar verticalement */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .navbar header {
+        margin-bottom: 10px; /* Espacement entre le logo/titre et les liens de navigation */
+    }
+
+    .navbar header img {
+        width: 100px; /* Réduire la taille du logo */
+        height: auto; /* Conserver les proportions */
+    }
+
+    .navbar h1 {
+        font-size: 1em; /* Réduire la taille du titre */
+    }
+
+    .navbar nav {
+        display: flex;
+        flex-direction: row; /* Aligner les liens de navigation verticalement */
+    }
+
+    .navbar nav a {
+        margin: 5px 0 0 15px; /* Espacement entre les liens de navigation */
+    }
+
+    .container {
+        padding: 10px; /* Réduire le padding pour gagner de l'espace */
+    }
+
+    .services h2 {
+        font-size: 1.2em; /* Réduire la taille du titre des services */
+    }
+
+    .services p {
+        font-size: 0.9em; /* Réduire la taille du texte des services */
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row; /* Aligner les images verticalement */
+        align-items: center; /* Centrer les images */
+    }
+
+    .images img {
+        width: 100%; /* Faire en sorte que les images occupent toute la largeur */
+        max-width: 300px; /* Limiter la largeur maximale des images */
+       // height: auto; /* Conserver les proportions */
+        margin-bottom: 10px; /* Espacement entre les images */
+    }
+
+    .contact h2 {
+        font-size: 1.2em; /* Réduire la taille du titre de contact */
+    }
+
+    .contact p {
+        font-size: 0.9em; /* Réduire la taille du texte de contact */
+    }
+
+    footer {
+        font-size: 0.8em; /* Réduire la taille du texte du footer */
+        text-align: center; /* Centrer le texte du footer */
+    }
+}
