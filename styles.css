@@ -3,15 +3,20 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+
 }
 
+a{
+    text-decoration: none;
+    color: blue;
+}
 
 .navbar{
-    border: solid 1px blue;
+    //border: solid 1px blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: red;
 }
 header {
     color: #fff;
@@ -29,7 +34,6 @@ header img {
 }
 
 nav {
-   //background-color: #444;
     padding: 10px;
     text-align: center;
     width: 30%;
@@ -49,12 +53,43 @@ nav a {
     margin-bottom: 20px;
 }
 
+.contact{
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2{
+    //border:solid red 1px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/*class images des bennes*/
+.images{
+//border: solid 1px black;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.images img{
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+}
+
 footer {
-    background-color: #333;
+    background-color: red;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }

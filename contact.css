@@ -1,7 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
 .contact{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 20px;
+}
+
+.imagescontact{
+    display: flex;
+    justify-content: center;
+    margin: -5em 0 1em 0;
+}
+
+.imagescontact img{
+    margin-top: 1em;
+    object-fit: cover;
+    height: 300px;
 }
