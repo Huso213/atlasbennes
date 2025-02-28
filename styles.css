@@ -107,15 +107,22 @@ footer {
 
 /* Styles de base pour les écrans de téléphone */
 @media all and (max-width: 768px) {
+.navbar{
+    height:100px;
+    border: solid 2px black;
+}
+
     header {
         flex-direction: row;
         width: 70%;
+        height:100px;
+
         border: solid 2px green;
     }
 
     header img {
         margin: 20px 0;
-        width: 100px;
+        width: 90px;
     }
 
     nav {
@@ -123,6 +130,9 @@ footer {
     }
 h1{
     font-size: 1em;
+    margin: 0 0 0 0;
+    width: 100%;
+    border: solid 3px gray;
 }
 
 .tel{
@@ -133,9 +143,9 @@ h1{
 }
 
 h2{
-    font-size: 1em;
+    font-size: 0.8em;
     width: 100%;
-    border: solid 1px blue;
+    border: solid 4px brown
 }
 
 .tel a{
@@ -157,12 +167,17 @@ p{
         height: 200px;
     }
     nav {
-        margin: 0 10px;
-        width: 30%;
+        margin: 0;
+        width: min-content;
         display: flex;
         flex-direction: row;
-        border: solid 2px blue;
+        border: solid 2px #ff0178;
 
+    }
+    nav a {
+        margin: 0 5px;
+    font-size: 0.7em;
+    width: auto;
     }
     
 }
