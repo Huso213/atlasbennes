@@ -15,7 +15,6 @@ a{
 }
 
 .navbar{
-    //border: solid 1px blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,20 +25,28 @@ header {
     padding: 10px 0;
     text-align: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 90%;
+   // border: solid 1px black;
+
 }
 
 header img {
     max-width: 200px;
-    margin: 0 20px;
+    margin: -15px 18em 0 20px;
 }
 
+h1{
+   // border: solid 1px blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 nav {
     padding: 10px;
-    text-align: center;
-    width: 30%;
+    width: 20%;
+    //border: solid 1px green;
 }
 
 nav a {
