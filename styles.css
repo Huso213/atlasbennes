@@ -6,6 +6,7 @@ body {
 
 }
 
+
 a{
     text-decoration: none;
     color: blue;
@@ -27,7 +28,6 @@ header {
     display: flex;
     align-items: center;
     width: 90%;
-   // border: solid 1px black;
 
 }
 
@@ -37,7 +37,6 @@ header img {
 }
 
 h1{
-   // border: solid 1px blue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +45,6 @@ h1{
 nav {
     padding: 10px;
     width: 20%;
-    //border: solid 1px green;
 }
 
 nav a {
@@ -169,6 +167,18 @@ nav a {
     font-size: 18px;
 }
 
+/* Style pour l'indicateur de slide */
+.slide-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -239,19 +249,21 @@ footer {
     }
 
     header {
+        display: flex;
         flex-direction: row; /* Garder le logo et le titre en ligne */
         align-items: center; /* Aligner les éléments verticalement */
-        width: auto; /* Ajuster la largeur */
+        width: 100%; /* Ajuster la largeur */
     }
 
     header img {
-        max-width: 85px; /* Réduire la taille du logo */
+        max-width: 70px; /* Réduire la taille du logo */
         margin: 0 10px 0 0; /* Ajuster l'espacement */
     }
 
     h1 {
-        font-size: 1em; /* Réduire la taille du titre */
+        font-size: 0.9em; /* Réduire la taille du titre */
         margin: 0; /* Supprimer la marge */
+        justify-content: center;
     }
 
     nav {
