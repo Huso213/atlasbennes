@@ -5,7 +5,106 @@ body {
     background-color: #f4f4f4;
 
 }
+/* Style pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    padding: 10px 20px;
+    position: relative; /* Nécessaire pour centrer le contenu */
+}
 
+header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex: 1; /* Permet au header de prendre l'espace disponible */
+}
+
+header img {
+    max-width: 100px; /* Ajuste la taille du logo */
+    margin-right: 20px; /* Espacement entre le logo et le titre */
+}
+
+.title-container {
+    text-align: center; /* Centre le texte */
+    position: absolute; /* Position absolue pour centrer */
+    left: 50%; /* Centre horizontalement */
+    top: 50%; /* Centre verticalement */
+    transform: translate(-50%, -50%); /* Ajuste le centrage */
+}
+
+h1 {
+    font-size: 24px; /* Taille du titre */
+    margin: 0; /* Supprime la marge par défaut */
+    white-space: nowrap; /* Empêche le titre de se casser en plusieurs lignes */
+}
+
+.title-container p {
+    font-size: 18px; /* Taille du sous-titre */
+    margin: 0; /* Supprime la marge par défaut */
+    white-space: nowrap; /* Empêche le texte de se casser en plusieurs lignes */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px; /* Espacement entre les liens */
+    font-size: 16px; /* Taille de la police des liens */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Souligne les liens au survol */
+}
+
+/* Ajustements pour les écrans de petite taille */
+@media all and (max-width: 560px) {
+    .navbar {
+        flex-direction: column; /* Change la direction en colonne pour les petits écrans */
+        padding: 10px; /* Réduit le padding */
+    }
+
+    header {
+        flex-direction: column; /* Change la direction en colonne pour les petits écrans */
+        text-align: center; /* Centre le texte */
+    }
+
+    header img {
+        max-width: 70px; /* Réduit la taille du logo */
+        margin-right: 0; /* Supprime l'espacement à droite */
+        margin-bottom: 10px; /* Ajoute un espacement en bas */
+    }
+
+    .title-container {
+        position: static; /* Réinitialise la position pour les petits écrans */
+        transform: none; /* Supprime la transformation */
+        margin-top: 10px; /* Ajoute un espacement en haut */
+    }
+
+    h1 {
+        font-size: 18px; /* Réduit la taille du titre */
+    }
+
+    .title-container p {
+        font-size: 14px; /* Réduit la taille du sous-titre */
+    }
+
+    nav {
+        margin-top: 10px; /* Ajoute un espacement en haut */
+    }
+
+    nav a {
+        font-size: 14px; /* Réduit la taille de la police des liens */
+        margin-left: 10px; /* Réduit l'espacement entre les liens */
+    }
+}
 
 a{
     text-decoration: none;
@@ -15,43 +114,7 @@ a{
     font-weight: bold;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: red;
-}
-header {
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    width: 90%;
 
-}
-
-header img {
-    max-width: 200px;
-    margin: -15px 18em 0 20px;
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-nav {
-    padding: 10px;
-    width: 20%;
-}
-
-nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-}
 
 /*class annonces tel clickable*/
 
@@ -253,6 +316,7 @@ footer {
         flex-direction: row; /* Garder le logo et le titre en ligne */
         align-items: center; /* Aligner les éléments verticalement */
         width: 100%; /* Ajuster la largeur */
+        justify-content: space-around;
     }
 
     header img {
