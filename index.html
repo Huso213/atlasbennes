@@ -22,23 +22,29 @@
     <div class="container">
         <section id="services" class="services">
             <div class="tel">
-                <h2>Pour louer une benne ou obtenir un devis personnalisé, contactez-nous par téléphone au
-             <a href="tel:0652364470">06 52 36 44 70</a>
-             </h2>
+                <h2>Pour louer une benne ou obtenir un devis personnalisé, contactez-nous par téléphone au 
+                    <a href="tel:0652364470">06 52 36 44 70</a>
+                </h2>
             </div>
-            <p>ATLAS vous propose un service de location de bennes pour vos travaux de démolition, de rénovation ou de
-                construction. Nous mettons à votre disposition des bennes de 8m3 à 30m3 pour l'évacuation de vos
-                déchets.</p>
+            <p>
+                ATLAS vous propose un service de location de bennes pour vos travaux de démolition, de rénovation ou de construction. 
+                Nous mettons à votre disposition des bennes de 8m³ à 30m³ pour l'évacuation de vos déchets.
+            </p>
         </section>
 
         <!--IMAGES-->
 
         <section id="images" class="images">
-            <img src="Photos/bennes.jpg" alt="img bennes">
-            <img src="Photos/bennes2.jpg" alt="img bennes">
-            <img src="Photos/bennes1.jpg" alt="img bennes">
-
-
+            <div class="slider">
+                <div class="slides">
+                    <img src="Photos/bennes.jpg" alt="img bennes" class="slide">
+                    <img src="Photos/bennes2.jpg" alt="img bennes" class="slide">
+                    <img src="Photos/bennes1.jpg" alt="img bennes" class="slide">
+                </div>
+                <!-- Boutons de navigation -->
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
         </section>
 
         <section id="contact" class="contact">
@@ -50,6 +56,9 @@
     <footer>
         <p>&copy; 2024 ATLAS - Tous droits réservés.</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

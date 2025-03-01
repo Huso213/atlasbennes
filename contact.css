@@ -1,23 +1,33 @@
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.contact{
+/* Style pour la section de contact */
+.contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 20px;
+    text-align: center;
 }
 
-.imagescontact{
+/* Style pour la section des images */
+.imagescontact {
     display: flex;
     justify-content: center;
-    margin: -5em 0 1em 0;
+    align-items: center;
+    margin: 20px 0; /* Ajustement de la marge */
+    width: 100%; /* Utiliser toute la largeur disponible */
 }
 
-.imagescontact img{
-    margin-top: 1em;
-    object-fit: cover;
-    height: 300px;
+/* Style pour l'image */
+.imagescontact img {
+    max-width: 100%; /* L'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Conserver les proportions de l'image */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    object-fit: cover; /* Remplir le conteneur sans déformer l'image */
 }
