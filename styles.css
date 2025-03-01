@@ -261,7 +261,7 @@ footer {
     }
 
     h1 {
-        font-size: 0.9em; /* Réduire la taille du titre */
+        font-size: 14px; /* Réduire la taille du titre */
         margin: 0; /* Supprimer la marge */
         justify-content: center;
     }
@@ -275,7 +275,7 @@ footer {
     }
 
     nav a {
-        font-size: 0.9em; /* Réduire la taille de la police */
+        font-size: 12px; /* Réduire la taille de la police */
         margin: 0 5px; /* Réduire l'espacement entre les liens */
     }
 
