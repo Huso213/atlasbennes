@@ -275,7 +275,7 @@ footer {
     }
 
     nav a {
-        font-size: 12px; /* Réduire la taille de la police */
+        font-size: 10px; /* Réduire la taille de la police */
         margin: 0 5px; /* Réduire l'espacement entre les liens */
     }
 
