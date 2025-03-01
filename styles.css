@@ -245,7 +245,7 @@ footer {
     }
 
     header img {
-        max-width: 100px; /* Réduire la taille du logo */
+        max-width: 85px; /* Réduire la taille du logo */
         margin: 0 10px 0 0; /* Ajuster l'espacement */
     }
 
